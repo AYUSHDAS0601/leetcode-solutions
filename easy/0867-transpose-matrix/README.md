@@ -36,21 +36,19 @@ Constraints:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-06-29T16:42:11.628Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 19.9 MB (beats 45.01%)  
+**Submitted:** 2026-06-29T16:43:27.967Z  
 
 ```py
-class Solution:
-    def transpose(self, matrix: List[List[int]]) 
-    -> List[List[int]]:
-        ROWS, COLS = len(matrix), len(matrix[0])
-        res = [[0]* ROWS for _ in range (COLS)]
-        for r in range(ROWS):
-            for c in range(COLS):
-                res[c][r] = matrix[r][c]
-            return res
-
+class Solution:
+    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+        ROWS, COLS = len(matrix), len(matrix[0])
+        res = [[0]* ROWS for _ in range (COLS)]
+        for r in range(ROWS):
+            for c in range(COLS):
+                res[c][r] = matrix[r][c]
+        return res
 ```
 
 ---

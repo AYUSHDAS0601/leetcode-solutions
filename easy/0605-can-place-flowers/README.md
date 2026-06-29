@@ -28,9 +28,9 @@ Constraints:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19 MB  
-**Submitted:** 2026-06-29T15:49:13.078Z  
+**Runtime:** 6 ms (beats 83.39%)  
+**Memory:** 19.8 MB (beats 10.26%)  
+**Submitted:** 2026-06-29T15:49:19.886Z  
 
 ```py
 class Solution:
@@ -38,7 +38,7 @@ class Solution:
         f = [0] + flowerbed + [0]
 
         for i in range(1, len(f) -1 ):
-            if f[i-1] == 0 and  f[i] == 0:
+            if f[i-1] == 0 and  f[i] == 0 and f[i+1] == 0:
                 f[i] = 1
                 n-=1
         return n <= 0      

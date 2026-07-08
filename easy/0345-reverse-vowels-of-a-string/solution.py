@@ -12,4 +12,4 @@ class Solution:
                 s[l], s[r] = s[r], s[l]
                 right += 1
                 left += 1
-        return ' '.join(s)
+        return ''.join(s)

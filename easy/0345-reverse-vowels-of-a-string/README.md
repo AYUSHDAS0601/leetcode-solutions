@@ -39,27 +39,26 @@ Constraints:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.5 MB  
-**Submitted:** 2026-07-08T17:14:11.210Z  
+**Runtime:** 11 ms (beats 54.06%)  
+**Memory:** 20.6 MB (beats 52.02%)  
+**Submitted:** 2026-07-08T17:21:06.064Z  
 
 ```py
-class Solution:
-    def reverseVowels(self, s: str) -> str:
-        vowels = {'a','e','i','o','u', 'A', 'E', 
-        l, r = 0 , len(s)-1
-        while l>r:
-            if s[l] not in vowels:
-                left += 1
-            elif s[r] not in vowels:
-                right -= 1
-            else :
-                s[l], s[r] = s[r], s[l]
-                l += 1
-                r -= 1
-        'I', 'O', 'U'}
-        return ''.join(s)
-
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        vowels = {'a','e','i','o','u', 'A', 'E', 'I', 'O', 'U'}
+        s = list(s)
+        l, r = 0 , len(s)-1
+        while l<r:
+            if s[l] not in vowels:
+                l += 1
+            elif s[r] not in vowels:
+                r -= 1
+            else :
+                s[l], s[r] = s[r], s[l]
+                l += 1
+                r -= 1
+        return ''.join(s)
 ```
 
 ---

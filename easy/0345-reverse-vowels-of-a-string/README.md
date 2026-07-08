@@ -41,12 +41,12 @@ Constraints:
 **Language:** Python  
 **Runtime:** 0 ms  
 **Memory:** 19.4 MB  
-**Submitted:** 2026-07-08T17:12:56.965Z  
+**Submitted:** 2026-07-08T17:11:59.319Z  
 
 ```py
 class Solution:
     def reverseVowels(self, s: str) -> str:
-        vowels = {'a','e','i','o','u', 'A', 'E', 
+        vowels = {'a','e','i','o','u'}
         l, r = 0 , len(s)-1
         while l>r:
             if s[l] not in vowels:
@@ -57,7 +57,7 @@ class Solution:
                 s[l], s[r] = s[r], s[l]
                 right += 1
                 left += 1
-        'I', 'O', 'U'}
+        s.lower()
         return ''.join(s)
 
 ```

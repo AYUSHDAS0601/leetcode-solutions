@@ -40,8 +40,8 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.4 MB  
-**Submitted:** 2026-07-08T17:10:46.079Z  
+**Memory:** 19.5 MB  
+**Submitted:** 2026-07-08T17:11:23.409Z  
 
 ```py
 class Solution:
@@ -58,7 +58,7 @@ class Solution:
                 s[l], s[r] = s[r], s[l]
                 right += 1
                 left += 1
-        return ' '.join(s)
+        return ''.join(s)
 
 ```
 

@@ -33,27 +33,28 @@ Follow up: Can you solve the problem in O(1) extra space complexity? (The out
 ## Solution
 
 **Language:** Python  
-**Runtime:** 15 ms (beats 93.44%)  
-**Memory:** 25.5 MB (beats 55.23%)  
-**Submitted:** 2026-07-16T18:07:08.347Z  
+**Runtime:** 0 ms  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-07-16T18:07:01.152Z  
 
 ```py
-class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        result = [1] * n
-        
-        left_product = 1
-        for i in range(n):
-            result[i] = left_product
-            left_product *= nums[i]
-        
-        right_product = 1
-        for i in range(n - 1, -1, -1):
-            result[i] *= right_product
-            right_product *= nums[i]
-        
-        return result
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        result = [1] * n
+        
+        left_product = 1
+        for i in range(n):
+            result[i] = left_product
+            left_product *= nums[i]
+        
+        right_product = 1
+        for i in range(n - 1, -1, -1):
+            result[i] *= right_product
+            right_product *= nums[i]
+        
+        return result
+
 ```
 
 ---

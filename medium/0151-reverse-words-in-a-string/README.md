@@ -48,17 +48,18 @@ Follow-up: If the string data type is mutable in your language, can you solve 
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.3 MB (beats 79.02%)  
-**Submitted:** 2026-07-16T08:48:53.480Z  
+**Runtime:** 0 ms  
+**Memory:** 19.2 MB  
+**Submitted:** 2026-07-16T08:48:47.460Z  
 
 ```py
-class Solution:
-    def reverseWords(self, s: str) -> str:
-        words = s.split()
-        words.reverse()
-        return " ".join(words)
-        
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        words = s.split()
+        words.reverse()
+        return " ".join(words)
+        
+
 ```
 
 ---
